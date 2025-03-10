@@ -161,6 +161,12 @@ button:hover {
   background-color: #8b2040;
 }
 
+.bottompage {
+padding-left: 30%;
+padding-right: 30%;
+
+}
+
 #json-display {
   margin: 20px;
   padding: 15px;
@@ -179,26 +185,28 @@ button:hover {
 .sectionItem {
   text-align: left;
   color: #dddddd;
-  padding: 10px;
-  padding-left: 40%;
+  padding: 5px;
 }
 
 /* Styling for Portfolio page*/
 .gallery {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  flex-wrap: wrap;
 }
 
 
 .project {
   width: 20%;
   background-color: #dddddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
   border-radius: 10px;
   box-shadow: 0px 0px 10px #131313(0, 0, 0, 0.2);
   padding: 10px;
-  margin: 20px;
-  text-align: center;
+  margin: 10px;
   color:#0e0e0e;
 }
 
@@ -206,19 +214,11 @@ button:hover {
 .project .title {
   font-size: 28px;
   text-transform: uppercase !important;
-  font-weight:300;
+  font-weight: bold;
+  text-decoration: none;
   text-shadow:0px 0px 10px #131313(0, 0, 0, 0.2);
   color:#1b050c;
-  padding: 10px;
-  -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: black;
-  -moz-webkit-text-stroke-width: 0.5px;
-  -moz-webkit-text-stroke-color: black;
-  -o-webkit-text-stroke-width: 0.5px;
-  -o-webkit-text-stroke-color: black;
-  -ms-webkit-text-stroke-width: 0.5px;
-  -ms-webkit-text-stroke-color: black;
-
+  padding:10px;
 }
 
 
@@ -394,9 +394,17 @@ footer {
       grid-template-columns: repeat(2, 1fr); /* 2 per row on smaller desktop */
     }
 
-    .cv-box {
-      width: 45%; /* Adjust to 2 columns */
-  }
+    .bottompage {
+      padding-left: 20%;
+      padding-right: 20%;
+      
+      }
+
+  .bottompage {
+    padding-left: 20%;
+    padding-right: 20%;
+    
+    }
 }
   
 
@@ -438,12 +446,43 @@ footer {
 
 
     .gallery {
-      grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(1fr);
+    }
+    
+    
+    .gallery-item {
+      width: 200px;
+
     }
 
+    .project .title {
+      font-size: 20px;
+      max-width: 170px;
+    }
     .container1 {
       grid-template-columns:repeat(1, 1fr);
 
   }
+
+  .bottompage {
+    padding-left: 10%;
+    padding-right: 10%;
+    
+    }
+  }
+    @media (max-width: 768px) {
+
+      
+      .project .title {
+        font-size: 18px;
+        max-width: 120px;
+        padding: 2px;
+      }
+
+      .project {
+      padding: 2px;
+      width: 150px;
+
+      }
 
 }
