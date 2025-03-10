@@ -1,0 +1,21 @@
+
+
+{
+  "experience": {
+      "title": "Work Experience",
+            "items": [
+          " UI/UX Design Internship at Cetasol (2021-2023) ",
+          " Sales Advisor at HM (2021-2022) ",
+          " Tech Support Advisor at WebHelp (2020-2021 "
+      ]
+  },
+  "education": {
+    "title": "Education",
+    "items": [
+  " FrontEnd Web Development (2025-Ongoing) ",
+  " UI/UX Design (2021-2023) ",
+  " Digital Visual Identity (2024) ",
+  " Media - Photo, Film and Graphic Design (2013-2016) "
+    ]
+  }
+}

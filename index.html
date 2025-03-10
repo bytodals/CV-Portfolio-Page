@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Landing Page</title>
-    <link rel="stylesheet" href="styles.css\stylesheetupg2.css">
+    <link rel="icon" type="image/x-icon" href="images/star.png">
+    <link rel="stylesheet" href="styles.css/stylesheetupg2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   </head>
@@ -15,69 +16,53 @@
 
   <header>
     <nav class="menu">
-      <h1>todals</h1>
+      <h1 class="logo">todals</h1>
       <div class="hamburger" onclick="toggleMenu()">☰</div>
         <ul id="menu-list">
           <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>  
-      </div>
     </nav>
   </header>
 
 <main>
-  
-
-      <div class="container">
-      <!-- Box 1 -->
-      <div class="image-box">
-          <img src="images\me.PNG" alt="picture of me">
-      </div>
-
-      <!-- Box 2: Text + CV -->
-      <div class="text-box">
-        <h2> Welcome</h2>
-            <p>
-              I'm Johanna Todal, a UX/UI designer and frontend developer with a passion for creating intuitive,
-              visually engaging, and user-friendly digital experiences. With a background in fashion, retail, 
-              sales, technical support, and beauty, I bring a unique blend of creativity and problem-solving to my work.
-
-              Currently expanding my expertise in frontend development, I thrive on combining design and technology to build seamless, 
-              accessible, and engaging interfaces. I'm always eager to learn, innovate, and push the boundaries of digital design to enhance user experiences.
-              <a href="images\CV.png" target="_blank">Click here to see my CV</a>
-            </p>
-      </div>
-    </div>
-
-
-    <div class="gallery">
-      <div class="project">
-        <a href="https://github.com/bytodals/Uppgift-1-Login-page" target="_blank" class="title">Login page assignment</a>
-        <a href="https://github.com/bytodals/Uppgift-1-Login-page" target="_blank">
-        <img src="images\p1.PNG" target="_blank" alt="Project 1">
-        </a>
-      </div>
-        <div class="project">
-          <a href="https://github.com/bytodals/git" target="_blank" class="title">Test Project 1</a>
-          <a href="https://github.com/bytodals/git" target="_blank">
-          <img src="images\p2.png" target="_blank" alt="Projekt 2">
-          </a>
+  <section class="textandpicture">
+      <div class="container1">
+        <div class="image-box">
+          <img src="images/me.PNG" alt="picture of a pale woman (me) with dark hair looking down and smiling">
         </div>
-      <div class="project">
-        <a href="https://github.com/bytodals/Uppgift-1-Login-page" target="_blank" class="title">Login page assignment 2</a>
-        <a href="https://github.com/bytodals/Uppgift-1-Login-page" target="_blank">
-        <img src="images\p1.PNG" target="_blank" alt="Projekt 3">
-        </a>
-      </div>
-        <div class="project">
-          <a href="https://github.com/bytodals/git" target="_blank" class="title">Test project 2</a>
-          <a href="https://github.com/bytodals/git" target="_blank">
-          <img src="images\p2.png" target="_blank" alt="Projekt 4">
-          </a>
+
+        
+        <div class="text-box">
+          <h2> WELCOME </h2>
+              <div class="grid-container">
+                <p>I'm Johanna Todal, a UX/UI designer and frontend developer with a passion for creating intuitive,
+                visually engaging, and user-friendly digital experiences. With a background in fashion, retail, 
+                sales, technical support, and beauty, I bring a unique blend of creativity and problem-solving to my work.
+
+                Currently expanding my expertise in Frontend Development, I thrive on combining design and technology to build seamless, 
+                accessible, and engaging interfaces. I'm always eager to learn, innovate, and push the boundaries of digital design to enhance user experiences.
+                </p> 
+              </div>
         </div>
       </div>
+      </section>
+
+    <article class="bottompage">
+     <h2>CV</h2> 
+      <div class="cv-container">
+        <button id="load-json-btn">Show my CV</button>
+      </div>
+        <div id="json-display">
+        </div>
+    </article>
+      
 </main>
+      
+
+
 
 <footer>
   <div>
@@ -87,14 +72,17 @@
           <li><a href="https://www.linkedin.com/in/johanna-todal/">Linkedin</a></li>
       </ul>
     <div class="email">
-      <i class="fa-solid fa-envelope"></i> 
       <a href="mailto:johanna.todal@hotmail.com">johanna.todal@hotmail.com</a>
   </div>
     <p class="footer-text"> @ 2025 Todals. All rights reserved.</p>
-  </div>
+   </div>
+   </div>
 </footer>
 
 <script src="script.js"></script>
 
 </body>
 </html>
+
+<!-- I got the base of the codes from my sources but rewrote and changed it to fit my project
+other sources than mentioned above: https://www.json.org/json-en.html, w3schools, https://www.youtube.com/watch?v=YiOlaiscqDY -->
